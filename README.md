@@ -1,4 +1,4 @@
-# Microsoft Quantum Development Kit: Q# runtime #
+# Microsoft Quantum Development Kit: Q# runtime # #QTIME#
 
 Welcome to the Microsoft Quantum Development Kit!
 
