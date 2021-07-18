@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="..\Common\AssemblyCommon.props" />
+  <Import Project="..\Common\DebugSymbols.props" />
+  
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <PlatformTarget>x64</PlatformTarget>
+    <RootNamespace>Microsoft.Quantum.Runtime</RootNamespace>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <Description>Core support for the Q# runtime.</Description>
+    <PackageTags>Quantum Q# QSharp</PackageTags>
+  </PropertyGroup>  
+  
+  <ItemGroup>
+    <Compile Include="..\Common\DelaySign.cs" Link="Properties\DelaySign.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="System.Collections.Immutable" Version="1.6.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\build\assets\qdk-nuget-icon.png" Pack="true" Visible="false" PackagePath="" />
+  </ItemGroup>
+</Project>

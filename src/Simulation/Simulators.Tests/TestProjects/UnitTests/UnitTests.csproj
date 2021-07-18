@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.Quantum.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <IsPackable>false</IsPackable>
+    <ExposeReferencesViaTestNames>true</ExposeReferencesViaTestNames>
+    <!-- we will provide our own -->
+    <IncludeQSharpCorePackages>false</IncludeQSharpCorePackages>
+    <IncludeCSharpRuntime>false</IncludeCSharpRuntime>
+    <QSharpDocsGeneration>false</QSharpDocsGeneration>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Simulators\Microsoft.Quantum.Simulators.csproj" />
+    <ProjectReference Include="..\Library1\Library1.csproj" />
+    <ProjectReference Include="..\Library2\Library2.csproj" />
+    <ProjectReference Include="..\Library with Spaces\Library with Spaces.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.4.0" />
+    <PackageReference Include="xunit" Version="2.4.1" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.1" />
+    <DotNetCliToolReference Include="dotnet-xunit" Version="2.3.1" />
+  </ItemGroup>
+
+</Project>

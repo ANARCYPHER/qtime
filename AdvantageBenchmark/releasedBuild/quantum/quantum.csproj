@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.Quantum.Sdk">
+
+  <ItemGroup>
+    <QSharpCompile Include="..\..\privateBuild\quantum.qs" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+
+</Project>
